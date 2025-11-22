@@ -1,0 +1,707 @@
+:root {
+    --primary: #FF8400;
+    --secondary: #FFF5D3;
+    --hover: #CC6002;
+    --hoversecundario: #FFB537;
+    --outline: #CACACA;
+    --text: #0E0E0E;
+    --white: #FFFFFF;
+    --muted: #666;
+    --exito: #00bc70;
+    --error: #ff4438;
+    --radius: 12px;
+    --gap: 12px;
+}
+
+#banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("../images/fotp1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-bottom: 5px solid #FFB537;
+    border-top: 5px solid #FFB537;
+}
+
+#banner-palomiras {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("../images/laspalomiras.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-bottom: 5px solid #FFB537;
+    border-top: 5px solid #FFB537;
+}
+
+#banner-spread {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("../images/spread2.png");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-bottom: 5px solid #FFB537;
+    border-top: 5px solid #FFB537;
+}
+
+#info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 65%;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    height: 100%;
+    color: var(--text);
+    background: var(--white)
+}
+
+h2 {
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px 10px 0px;
+}
+
+h3 {
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px 10px 10px;
+}
+
+h3.header-negro {
+    color: var(--text);
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+h4 {
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    color: var(--white);
+    font-weight: 200;
+    font-size: .9rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.linea-naranja {
+    width: 75%;
+    height: 2px;
+    background-color: var(--primary);
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: var(--primary);
+}
+
+main {
+    grid-area: main;
+    background-color: var(--white);
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--outline);
+    color: var(--muted);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--muted);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary);
+    width: 180px;
+    z-index: 1000;
+}
+
+.menu li a {
+    display: block;
+    color: var(--white);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: var(--hover);
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--outline);
+    background: var(--primary);
+    color: var(--white);
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.ri-menu-line {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.LogoNL {
+    width: 100px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ri-search-line {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* CSS para pagina principal */
+
+.imagen-contenedor {
+    position: relative;
+    width: 100%;
+}
+
+.FotoIni {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.cuadroIni {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 45%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrusel-contenedor {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.carrusel-item-contendor {
+    position: relative;
+    flex: 0 0 auto;
+    width: 30%;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carrusel-item-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.carrusel {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 10px;
+    width: 100%;
+}
+
+.carrusel-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.ri-arrow-left-line,
+.ri-arrow-right-line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.ri-arrow-left-line {
+    left: 5px;
+}
+
+.ri-arrow-right-line {
+    right: 5px;
+}
+
+ul.Emprendedores-container {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.Emprendedores-container .container-item {
+    position: relative;
+    width: 90%;
+    height: 150px;
+    min-height: 100px;
+    max-height: 150px;
+    background-color: var(--white);
+    border: 2px solid var(--outline);
+    padding: 0px;
+    margin: 10px 0px;
+    border-radius: 35px 0px 35px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+ul.Emprendedores-container .container-item.container-noticia {
+    height: 400px;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+ul.Emprendedores-container .container-item.nohover:hover {
+    cursor: default;
+}
+
+ul.Emprendedores-container .cuadroprecio {
+    position: absolute;
+    bottom: 0px;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 40px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--primary);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.Emprendedores-container .cuadroprecio.nohover:hover {
+    background-color: var(--primary);
+    cursor: default;
+}
+
+ul.Emprendedores-container .cuadroprecio:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.ri-calendar-event-line {
+    color: var(--white);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.textocuadro h3 {
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+    color: var(--text);
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    overflow: hidden;
+
+}
+
+.textocuadro p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin: 5px 0;
+    font-weight: light;
+    padding: 0px 30px 0px 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+}
+
+.categoria {
+    text-decoration: underline;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+}
+
+.categoria:hover {
+    color: var(--hover);
+    text-decoration: none;
+}
+
+.imagencuadro {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagencuadro img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0 30px 0;
+    object-fit: cover;
+    display: block;
+}
+
+.fechacuadro {
+    color: var(--primary);
+    font-weight: bold;
+    text-align: right;
+}
+
+/* CSS para lista emprendedores */
+#bread-crumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    color: var(--hover);
+}
+
+#bread-crumbs .ri-filter-2-fill {
+    margin-left: auto;
+    color: var(--primary);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* CSS para categorias */
+.carrusel-categorias {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 15px;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.carrusel-categorias::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-item-categorias {
+    flex: 0 0 auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.carrusel-item-categorias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item-categorias:hover .carrusel-item-text {
+    color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* CSS para galeria*/
+
+.galeriacompleta {
+    padding: 15px;
+    column-count: 2;
+    margin: 0px auto;
+    column-gap: 10px;
+}
+
+.galeriacompleta .galeria-item {
+    overflow: hidden;
+    border-radius: 35px 0px 35px 0px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.galeriacompleta .galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+a.enlace-item {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: none;
+        /* aún usará el menú hamburguesa */
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .imagen-contenedor {
+        height: 70vh;
+    }
+
+    .cuadroback {
+        width: 98vw;
+        height: 25vw;
+        top: 55%;
+    }
+
+    .cuadroIni {
+        width: 80%;
+        height: 45%;
+    }
+
+    .carrusel-item-contendor {
+        height: 150px;
+    }
+
+    ul.Emprendedores-container .container-item {
+        height: 180px;
+    }
+
+    .textocuadro p {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 4;
+    }
+
+    .galeriacompleta {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        grid-area: main;
+        display: flex;
+        width: 65%;
+        background-color: var(--white);
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+        height: 100%;
+    }
+
+    .menu li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: var(--white);
+        padding: 0 12px;
+        text-decoration: none;
+    }
+
+    .ri-menu-line {
+        display: none;
+    }
+
+    h4 {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+    #banner {
+        height: 400px;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    .LogoNL {
+        width: 170px !important;
+    }
+
+    .imagen-contenedor {
+        position: relative;
+        width: 100%;
+        height: 87vh;
+        overflow: hidden;
+    }
+
+    .cuadroback {
+        background-color: var(--primary);
+        width: 98.8vw;
+        height: 20vw;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .FotoIni {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .cuadroIni {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 70%;
+        height: 40%;
+        position: absolute;
+        top: 45%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .h3-desktop {
+        font-size: 2rem;
+    }
+
+    .carrusel-item-contendor {
+        height: 170px;
+    }
+
+    .linea-naranja {
+        width: 65%;
+        height: 4px;
+    }
+
+    ul.Emprendedores-container .cuadroprecio {
+        width: 120px;
+        height: 70px;
+    }
+
+    .textocuadro p {
+        font-size: 1rem;
+        -webkit-line-clamp: 5;
+    }
+
+    .galeriacompleta {
+        column-count: 4;
+    }
+
+    .textocuadro {
+        padding: 15px 60px 15px 15px;
+    }
+
+    .ri-calendar-event-line {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    ul.Emprendedores-container .container-item {
+        height: 200px;
+        max-height: 200px;
+    }
+
+    ul.Emprendedores-container .container-item.container-noticia {
+        height: 300px;
+        min-height: 150px;
+        max-height: 300px;
+    }
+}

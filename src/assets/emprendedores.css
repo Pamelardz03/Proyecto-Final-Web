@@ -1,0 +1,386 @@
+:root {
+    --primary: #FF8400;
+    --secondary: #FFF5D3;
+    --hover: #CC6002;
+    --outline: #E6E6E6;
+    --text: #0E0E0E;
+    --muted: #666;
+    --white: #FFFFFF;
+    --radius: 12px;
+    --gap: 12px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    height: 100%;
+    color: var(--text);
+}
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    width: 100vw;
+    background-color: var(--white);
+    flex-direction: column;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--outline);
+    color: var(--muted);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--muted);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary);
+    width: 180px;
+    z-index: 1000;
+}
+
+.menu li a {
+    display: block;
+    color: var(--white);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: var(--hover);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--outline);
+    background: var(--primary);
+    color: var(--white);
+    position: relative;
+}
+
+.ri-menu-line {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.LogoNL {
+    width: 90px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ri-search-line {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+#banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-bottom: 5px solid #FFB537;
+    border-top: 5px solid #FFB537;
+}
+
+.banner-palomiras {
+    background-image: url("../images/laspalomiras.jpg");
+}
+
+.banner-spread {
+    background-image: url("../images/spread1.png");
+}
+
+#info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 65%;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.info {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.titulo {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FFB537;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#bread-crumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: var(--hover);
+    font-size: 13px;
+}
+
+#bread-crumbs .ri-filter-2-fill {
+    margin-left: auto;
+    color: var(--primary);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+ul.Emprendedores-container {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.Emprendedores-container .container-item {
+    width: 90%;
+    height: auto;
+    background-color: var(--white);
+    border: 2px solid var(--outline);
+    padding: 0px 0px 0px;
+    margin: 10px 20px;
+    border-radius: 35px 0px 35px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+ul.Emprendedores-container .container-item.nohover:hover {
+    cursor: default;
+}
+
+.textocuadro h3 {
+    margin: 0;
+    padding: 5px 10px 0px 20px;
+    color: var(--text);
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.textocuadro p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin: 5px 0;
+    font-weight: light;
+    padding: 5px 10px 0px 20px;
+}
+
+.imagencuadro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagencuadro img {
+    width: 100%;
+    height: 150px;
+    border-radius: 35px 0 35px 0;
+    object-fit: cover;
+}
+
+.categoria {
+    text-decoration: underline;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-item a{
+    padding-left: 20px;
+}
+
+.categoria:hover {
+    color: var(--hover);
+    text-decoration: none;
+}
+
+.ri-instagram-fill,
+.ri-facebook-circle-fill,
+.ri-tiktok-fill,
+.ri-whatsapp-fill {
+    cursor: pointer;
+}
+
+a.enlace-item {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    #info-container {
+        font-size: 48px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    ul.Emprendedores-container .container-item {
+        width: 85%;
+        margin: 15px auto;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .imagencuadro img {
+        height: 180px;
+        border-radius: 35px 0 35px 0;
+        object-fit: cover;
+    }
+
+    .textocuadro h3 {
+        font-size: 1.1rem;
+    }
+
+    .textocuadro p {
+        font-size: 1rem;
+    }
+
+    #bread-crumbs {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
+    #bread-crumbs .ri-filter-2-fill {
+        font-size: 28px;
+    }
+
+    #redes {
+        font-size: 45px;
+        gap: 25px;
+    }
+
+    #contacto {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .ri-menu-line,
+    .ri-search-line {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        grid-area: main;
+        display: flex;
+        width: 65%;
+        background-color: var(--white);
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+        display: flex;
+        position: static;
+        width: auto;
+        background: none; 
+
+    }
+
+    .menu li a {
+        color: var(--white);
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    .ri-menu-line {
+        display: none;
+    }
+
+    #banner {
+        height: 400px;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    #contacto {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #bread-crumbs {
+        font-size: 16px;
+    }
+}
