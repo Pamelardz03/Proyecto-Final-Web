@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "../assets/styleHechoenNL.css";
 import "../assets/emprendedores.css";
 import NavBar from "../components/NavBar";
+import Carrusel from "../components/Carrusel";
+import EmprendedoresList from "../components/EmprendedorList";
 
 
 import LogoNL from "../images/LogoNL.svg";
@@ -37,78 +39,12 @@ export default function PaginaPrincipal() {
                 <h3 className="header-negro h3-desktop">Conoce los Más Vendidos:</h3>
                 <div className="linea-naranja"></div>
 
-                <div className="carrusel-contenedor">
-                    <i className="ri-arrow-left-line"></i>
-
-                    <div className="carrusel">
-                        <Link to="/producto" className="enlace-item">
-                            <div className="carrusel-item-contendor">
-                                <img src={palomiras2} className="carrusel-item" />
-                                <div className="carrusel-item-text">Palomiras Queso</div>
-                            </div>
-                        </Link>
-
-                        <Link to="/producto" className="enlace-item">
-                            <div className="carrusel-item-contendor">
-                                <img src={palomiras1} className="carrusel-item" />
-                                <div className="carrusel-item-text">Palomiras Mix</div>
-                            </div>
-                        </Link>
-
-                        <Link to="/spread" className="enlace-item">
-                            <div className="carrusel-item-contendor">
-                                <img src={spread2} className="carrusel-item" />
-                                <div className="carrusel-item-text">Spread Original</div>
-                            </div>
-                        </Link>
-
-                        <Link to="/spread" className="enlace-item">
-                            <div className="carrusel-item-contendor">
-                                <img src={spread3} className="carrusel-item" />
-                                <div className="carrusel-item-text">Spread Piquín y Limón</div>
-                            </div>
-                        </Link>
-                    </div>
-
-                    <i className="ri-arrow-right-line"></i>
-                </div>
+                <Carrusel/>
 
                 <h3 className="header-negro h3-desktop">Conoce a nuestros Emprendedores:</h3>
                 <div className="linea-naranja"></div>
 
-                <ul className="Emprendedores-container">
-                    <Link to="/emprendedor/1" className="enlace-item">
-                        <li className="container-item">
-                            <div className="cuadroprecio nohover"></div>
-                            <div className="textocuadro">
-                                <h3>Las Palomiras</h3>
-                                <p>
-                                    Las palomiras nacen del amor por lo artesanal y el deseo de transformar un antojo en una experiencia única.
-                                </p>
-                                <Link to="/productos" className="categoria">Comida</Link>
-                            </div>
-                            <div className="imagencuadro">
-                                <img src={laspalomiras} alt="Foto" />
-                            </div>
-                        </li>
-                    </Link>
-
-                    <Link to="/emprendedor/2" className="enlace-item">
-                        <li className="container-item">
-                            <div className="cuadroprecio nohover"></div>
-                            <div className="textocuadro">
-                                <h3>Spread MX</h3>
-                                <p>
-                                    Spread mezcla el gusto y los aderezos para crear una explosión de sabores elegantes.
-                                </p>
-                                <Link to="/productos" className="categoria">Comida</Link>
-                            </div>
-                            <div className="imagencuadro">
-                                <img src={spread1} alt="Foto" />
-                            </div>
-                        </li>
-                    </Link>
-                </ul>
+                <EmprendedoresList />
 
                 <h3 className="header-negro h3-desktop">Noticias:</h3>
                 <div className="linea-naranja"></div>

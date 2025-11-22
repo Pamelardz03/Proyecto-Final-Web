@@ -233,15 +233,16 @@ footer {
 .carrusel-contenedor {
     display: flex;
     position: relative;
+    align-items: center;
+    overflow: hidden;
     width: 100%;
-    margin: auto;
-    padding-top: 15px;
+    padding: 15px 0;
 }
 
 .carrusel-item-contendor {
     position: relative;
     flex: 0 0 auto;
-    width: 30%;
+    width: 100px;
     height: 100px;
     cursor: pointer;
     border-radius: 12px;
@@ -265,11 +266,10 @@ footer {
 
 .carrusel {
     display: flex;
-    align-items: flex-start;
-    overflow-x: hidden;
+    gap: 15px;
+    overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 10px;
-    width: 100%;
+    padding: 10px;
 }
 
 .carrusel-item {
@@ -305,16 +305,19 @@ footer {
 ul.Emprendedores-container {
     list-style: none;
     padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1000px;
 }
 
 ul.Emprendedores-container .container-item {
     position: relative;
-    width: 90%;
-    height: 150px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
     min-height: 100px;
     max-height: 150px;
     background-color: var(--white);
@@ -331,7 +334,7 @@ ul.Emprendedores-container .container-item {
 }
 
 ul.Emprendedores-container .container-item.container-noticia {
-    height: 400px;
+    height: auto;
     min-height: 150px;
     max-height: 200px;
 }
@@ -522,7 +525,6 @@ a.enlace-item {
 
     .menu {
         display: none;
-        /* aún usará el menú hamburguesa */
     }
 
     h4 {
@@ -553,7 +555,12 @@ a.enlace-item {
     }
 
     .carrusel-item-contendor {
+        width: 200px;
         height: 150px;
+    }
+
+    .carrusel-item-text {
+        font-size: 1rem;
     }
 
     ul.Emprendedores-container .container-item {
@@ -663,6 +670,7 @@ a.enlace-item {
     }
 
     .carrusel-item-contendor {
+        width: 250px;
         height: 170px;
     }
 
@@ -674,6 +682,10 @@ a.enlace-item {
     ul.Emprendedores-container .cuadroprecio {
         width: 120px;
         height: 70px;
+    }
+
+    .carrusel-item-text {
+        font-size: 1.5rem;
     }
 
     .textocuadro p {
@@ -694,14 +706,4 @@ a.enlace-item {
         cursor: pointer;
     }
 
-    ul.Emprendedores-container .container-item {
-        height: 200px;
-        max-height: 200px;
-    }
-
-    ul.Emprendedores-container .container-item.container-noticia {
-        height: 300px;
-        min-height: 150px;
-        max-height: 300px;
-    }
 }
