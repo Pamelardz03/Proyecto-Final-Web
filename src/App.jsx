@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
 
-import Home from "./pages/paginaprincipal";
-import PaginaPrincipal from './pages/paginaprincipal';
+// paginas
+import PaginaPrincipal from "./pages/paginaprincipal";
+import ListaCategorias from "./pages/listacategorias";
 
 function App() {
   return (
-    <div>
-      <PaginaPrincipal />   {}
-    </div>
+    <Routes>
+      {/* Pagina principal */}
+      <Route path="/" element={<PaginaPrincipal />} />
+
+      {/* Pagina de lista de categorias */}
+      <Route path="/categorias" element={<ListaCategorias />} />
+
+    </Routes>
   );
 }
 
-
-export default App
+export default App;
