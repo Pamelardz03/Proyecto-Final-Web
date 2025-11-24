@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/NavBar";
 import "../assets/styleHechoenNL.css";
-import "../assets/stylePaginaPrincipal.css";
 
 // imagenes
 import cat1 from "../images/categoria1.jpg";
@@ -52,7 +51,7 @@ export default function ListaCategorias() {
     <>
       <Navbar />
 
-      <main style={{ marginTop: "100px" }}>
+      <main>
         <nav id="bread-crumbs">
           <Link to="/" className="categoria">Inicio</Link>
           <i className="ri-arrow-drop-left-line"></i>

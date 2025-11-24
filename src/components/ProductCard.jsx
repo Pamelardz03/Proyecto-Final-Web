@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import "../assets/styleHechoenNL.css";
+import "../assets/emprendedores.css";
 
 export default function ProductCard({ id, name, description, category, image, categoryLink }) {
   return (
     <Link to={`/emprendedor/${id}`} className="enlace-item">
-      <li className="container-item">
+      <div className="container-item">
         <div className="cuadroprecio nohover"></div>
 
         <div className="textocuadro">
@@ -19,7 +21,7 @@ export default function ProductCard({ id, name, description, category, image, ca
         <div className="imagencuadro">
           <img src={image} alt={name} />
         </div>
-      </li>
+      </div>
     </Link>
   );
 }
