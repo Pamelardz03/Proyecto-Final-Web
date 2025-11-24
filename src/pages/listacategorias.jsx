@@ -17,7 +17,7 @@ import spread from "../images/spread1.png";
 
 export default function ListaCategorias() {
   const categorias = [
-    { nombre: "Comida", imagen: cat1, link: "/categoria/comida" },
+    { nombre: "Comida", imagen: cat1, link: "/categorias/comida" },
     { nombre: "Hogar", imagen: cat2, link: "#" },
     { nombre: "Ropa", imagen: cat3, link: "#" },
     { nombre: "Deportes", imagen: cat4, link: "#" },
@@ -85,7 +85,7 @@ export default function ListaCategorias() {
                 <div className="textocuadro">
                   <h3>{emp.nombre}</h3>
                   <p>{emp.descripcion}</p>
-                  <Link to="/categoria/comida" className="categoria">
+                  <Link to="/categorias/comida" className="categoria">
                     {emp.categoria}
                   </Link>
                 </div>

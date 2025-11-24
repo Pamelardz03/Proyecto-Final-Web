@@ -15,7 +15,7 @@ function App() {
       <Route path="/categorias" element={<ListaCategorias />} />
 
       {/* Pagina de lista de categorias */}
-      <Route path="/categoria/comida" element={<PaginaProductosCategoria />} />
+      <Route path="/categorias/comida" element={<PaginaProductosCategoria />} />
 
     </Routes>
   );

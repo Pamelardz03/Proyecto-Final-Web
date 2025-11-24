@@ -24,7 +24,7 @@ export default function PaginaProductosCategoria(){
             name: "Palomiras Mix",
             description: "Deliciosas palomitas artesanales con mezcla dulce",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: palomiras1,
         },
         {
@@ -32,7 +32,7 @@ export default function PaginaProductosCategoria(){
             name: "Palomiras Caramelo",
             description: "Receta especial con caramelo casero.",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: spread2,
         },
         {
@@ -40,7 +40,7 @@ export default function PaginaProductosCategoria(){
             name: "Spread Avellana",
             description: "Crema untable artesanal con avellanas naturales.",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: avellana,
         },
         {
@@ -48,7 +48,7 @@ export default function PaginaProductosCategoria(){
             name: "Spread Cacahuate",
             description: "Perfecta para pan tostado o snacks.",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: cacahuate,
         },
         {
@@ -56,7 +56,7 @@ export default function PaginaProductosCategoria(){
             name: "Palomiras Chocolate",
             description: "Crujientes palomitas bañadas en chocolate artesanal.",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: chocolate,
         },
         {
@@ -64,7 +64,7 @@ export default function PaginaProductosCategoria(){
             name: "Palomiras Enchiladas",
             description: "Sabor picante y único para amantes del chile.",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: palochile,
         },
         {
@@ -72,7 +72,7 @@ export default function PaginaProductosCategoria(){
             name: "Palomiras Mantequilla",
             description: "Clásicas palomitas con mantequilla premium.",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: mantequilla,
         },
         {
@@ -80,9 +80,10 @@ export default function PaginaProductosCategoria(){
             name: "Palomiras Dulce-Salado",
             description: "La combinación perfecta entre dulce y salado.",
             category: "Comidas",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: combinadas,
         },
+        
 
     ];
 
