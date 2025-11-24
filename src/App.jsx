@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-
-import PaginaPrincipal from './pages/paginaprincipal';
-
-function App() {
-  return (
-      <PaginaPrincipal />
-  );
-}
-
-export default App
-=======
 import { Routes, Route } from "react-router-dom";
 
 // paginas
@@ -34,4 +22,3 @@ function App() {
 }
 
 export default App;
->>>>>>> e904c951a42788e4e76a3fbd64e6cb70d2dfeff4
