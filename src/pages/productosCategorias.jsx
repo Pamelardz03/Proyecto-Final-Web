@@ -6,14 +6,15 @@ import ProductCard from "../components/ProductCard";
 
 
 import LogoNL from "../images/LogoNL.svg";
-import palomiras2 from "../images/laspalomiras2.png";
 import palomiras1 from "../images/laspalomiras1.png";
 import spread2 from "../images/spread2.png";
-import spread3 from "../images/spread3.png";
-import laspalomiras from "../images/laspalomiras.jpg";
-import spread1 from "../images/spread1.png";
-import noticia1 from "../images/noticia1.png";
-import noticia2 from "../images/noticia2.png";
+import cacahuate from "../images/cacahuate.webp"
+import avellana from "../images/avellana.webp"
+import chocolate from "../images/chocolate.jpg"
+import combinadas from "../images/combinadas.jpg"
+import palochile from "../images/palomitaschile.jpg"
+import mantequilla from "../images/mantequilla.jpg"
+
 
 export default function PaginaProductosCategoria(){
 
@@ -40,7 +41,7 @@ export default function PaginaProductosCategoria(){
             description: "Crema untable artesanal con avellanas naturales.",
             category: "Comidas",
             categoryLink: "/categoria/comida",
-            image: noticia1,
+            image: avellana,
         },
         {
             id: 4,
@@ -48,7 +49,7 @@ export default function PaginaProductosCategoria(){
             description: "Perfecta para pan tostado o snacks.",
             category: "Comidas",
             categoryLink: "/categoria/comida",
-            image: noticia2,
+            image: cacahuate,
         },
         {
             id: 5,
@@ -56,7 +57,7 @@ export default function PaginaProductosCategoria(){
             description: "Crujientes palomitas bañadas en chocolate artesanal.",
             category: "Comidas",
             categoryLink: "/categoria/comida",
-            image: palomiras1,
+            image: chocolate,
         },
         {
             id: 6,
@@ -64,7 +65,7 @@ export default function PaginaProductosCategoria(){
             description: "Sabor picante y único para amantes del chile.",
             category: "Comidas",
             categoryLink: "/categoria/comida",
-            image: palomiras1,
+            image: palochile,
         },
         {
             id: 7,
@@ -72,7 +73,7 @@ export default function PaginaProductosCategoria(){
             description: "Clásicas palomitas con mantequilla premium.",
             category: "Comidas",
             categoryLink: "/categoria/comida",
-            image: palomiras1,
+            image: mantequilla,
         },
         {
             id: 8,
@@ -80,7 +81,7 @@ export default function PaginaProductosCategoria(){
             description: "La combinación perfecta entre dulce y salado.",
             category: "Comidas",
             categoryLink: "/categoria/comida",
-            image: palomiras1,
+            image: combinadas,
         },
 
     ];
@@ -95,9 +96,9 @@ export default function PaginaProductosCategoria(){
                     <nav id="bread-crumbs">
                         <Link to="/" className="categoria">Inicio</Link>
                         <i className="ri-arrow-drop-left-line"></i>
-                        <span className="categoria">Categorias</span>
+                        <Link to="/categorias" className="categoria">Categorias</Link>
                         <i className="ri-arrow-drop-left-line"></i>
-                        <span className="categoria">Comidas</span>
+                        <span className="categoria">Comida</span>
                         <i className="ri-filter-2-fill"></i>
                     </nav>
 
