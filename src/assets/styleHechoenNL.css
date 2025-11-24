@@ -516,6 +516,45 @@ a.enlace-item {
     cursor: pointer;
 }
 
+ul.Emprendedores-container.productos-grid {
+  display: grid;              
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 22px;                              
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  list-style: none;
+}
+
+ul.Emprendedores-container.productos-grid li.producto-list-item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+ul.Emprendedores-container.productos-grid li.producto-list-item .container-item {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  ul.Emprendedores-container.productos-grid {
+    grid-template-columns: 1fr;
+    padding: 0px 16;
+    gap: 22px; 
+  }
+}
+
+@media (min-width: 1024px) {
+  ul.Emprendedores-container.productos-grid {
+    max-width: 1100px;
+  }
+}
+
+
+
 @media (min-width: 600px) and (max-width: 1023px) {
 
     main {
