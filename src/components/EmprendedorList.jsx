@@ -9,7 +9,7 @@ function EmprendedoresList() {
             name: "Las Palomiras",
             description: "Las palomiras nacen del amor por lo artesanal y el deseo de transformar un antojo en una experiencia única.",
             category: "Comida",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: laspalomiras
         },
         {
@@ -18,7 +18,7 @@ function EmprendedoresList() {
             description:
                 "Spread mezcla el gusto y los aderezos para crear una explocion de sabores llenos de elegancia y felicidad",
             category: "Comida",
-            categoryLink: "/categoria/comida",
+            categoryLink: "/categorias/comida",
             image: spread,
         },
     ];
